@@ -2,7 +2,6 @@ package com.example.servlet;
 
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import com.example.*;
 
 import javax.servlet.RequestDispatcher;
@@ -28,6 +27,6 @@ public class AddUserServlet extends HttpServlet {
         Warehouse wr = Warehouse.getInstance();
         wr.addUser(user);
 
-        resp.sendRedirect("add");
+        resp.sendRedirect("/add");
     }
 }
