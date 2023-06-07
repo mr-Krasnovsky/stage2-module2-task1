@@ -27,6 +27,6 @@ public class AddUserServlet extends HttpServlet {
         Warehouse wr = Warehouse.getInstance();
         wr.addUser(user);
 
-        resp.sendRedirect("/add");
+        resp.sendRedirect("add");
     }
 }
